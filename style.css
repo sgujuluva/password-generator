@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: aqua;
+    background-color:beige;
     width : 100vw;
     height : 100vh;
     display : flex;
@@ -12,6 +12,22 @@ body{
     align-items: center;
    }
 
+  /*  mode checkbox */
+  .check{
+      border : 1px solid red;
+      font-size: 2rem;
+  }
+  /* light and dark mode */
+  .light{
+      background-color: white;
+      color: black;
+  }
+  .dark{
+      background-color: black;
+      color:white;
+  }
+
+  /* box container */
 .box{
     display : flex;
     flex-direction: column;
@@ -22,10 +38,17 @@ body{
 }
 
 #showMe{
-border : 1px solid black;
+border : 2px solid grey;
 width: 50%;
 display: flex;
 justify-content: center;
 margin-bottom: 1.5rem;
-font-size: bold;
+font-size: 1.2rem;
+background-color: lightskyblue;
+border-radius: 10%;
+}
+button{
+    background-color: coral;
+    height:2.5rem;
+  
 }

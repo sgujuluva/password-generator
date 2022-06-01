@@ -7,6 +7,19 @@
  6. max length 6
  */
 let pwd = document.querySelector("#showMe");
+//let themes = document.querySelector("#light-dark");
+
+let theme =() =>{
+  let checkbox = document.querySelector("#light-dark").checked;
+  let body = document.querySelector("body");
+  if(checkbox){
+    body.classList.add("dark");
+    body.classList.remove("light");
+  }else{
+    body.classList.add("light");
+    body.classList.remove("dark");
+  }
+}
 
 function passwordNum() {
     /* let result = [];
@@ -25,7 +38,7 @@ function passwordNum() {
     let lowerCaseResult = [];
     let upperCaseResult = [];
     let specialCharactersResult = [];
-    
+
     for (let i = 0; i < 3; i++) {
    
       numberResult.push(number[Math.floor(Math.random() * number.length)]);
@@ -45,11 +58,15 @@ function passwordNum() {
       lowerCaseResult.join("") +
       upperCaseResult.join("") +
       specialCharactersResult.join("");
+      
       for (let i = 0; i < result.length; i++) {
         result1.push(result[Math.floor(Math.random() * result.length)]);    
     
      pwd.innerHTML = result1.join("");
       }
-    return result1.join("");
+   // return result1.join("");
+console.log(result1);
+/* let randomPassword = [];
+if(result1[0]  ) */
   }
   console.log(passwordNum());
